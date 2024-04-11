@@ -2,6 +2,9 @@
 # SPDX-License-Identifier: MPL-2.0
 
 provider "aws" {
+  region     = "us-west-2"
+  access_key = var.access_key 
+  secret_key = var.secret_key
 }
 
 # Data source used to grab the TLS certificate for Terraform Cloud.
