@@ -1,5 +1,15 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
+variable "secret_key" {
+  type        = string
+  description = "The secret key for AWS access"
+  sensitive   = true
+}
+variable "access_key" {
+  type        = string
+  description = "The access key for AWS access"
+  sensitive   = false
+}
 
 variable "tfc_aws_audience" {
   type        = string
