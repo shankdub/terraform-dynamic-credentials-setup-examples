@@ -36,6 +36,6 @@ variable "tfc_project_name" {
 
 variable "tfc_workspace_name" {
   type        = string
-  default     = "aws-workspace-1"
+  default     = "terraform-aws-control_tower_account_factory"
   description = "The name of the workspace that you'd like to create and connect to AWS"
 }
